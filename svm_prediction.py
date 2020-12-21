@@ -10,7 +10,7 @@ from sklearn import svm
 data = yf.download("AAPL", "2015-7-2", "2019-12-31")
 
 #Google trends and wikipedia pageviews data 
-traindata = pd.ExcelFile("C:/Users/burak/Desktop/Python/Machine Learning/model-13/dataset.xlsx")
+traindata = pd.ExcelFile("path/dataset.xlsx")
 traindata = traindata.parse("dataset")
 traindata.index = traindata["Date"]
 
